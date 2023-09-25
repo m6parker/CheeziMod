@@ -37,6 +37,9 @@ public class CheeziMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(ModItems.CHEDDAR_CHEESE);
+            event.accept(ModItems.STRAWBERRY);
+            event.accept(ModItems.CHOC_STRAWBERRY);
+
         }
     }
 
