@@ -1,0 +1,13 @@
+{
+  "type":"minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cheezimod:strawberry_block"
+    }
+  ],
+  "result": {
+    "item": "cheezimod:strawberry",
+    "count": 9
+  }
+}
