@@ -19,6 +19,12 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.cheezi_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.CHEDDAR_CHEESE.get());
+                        pOutput.accept(ModItems.SWISS_CHEESE.get());
+                        pOutput.accept(ModItems.BRIE_CHEESE.get());
+                        pOutput.accept(ModItems.PARMESAN_CHEESE.get());
+                        pOutput.accept(ModItems.MOZZARELLA_CHEESE.get());
+
+
                         pOutput.accept(ModItems.STRAWBERRY.get());
                         pOutput.accept(ModItems.CHOC_STRAWBERRY.get());
 

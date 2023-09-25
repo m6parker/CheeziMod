@@ -12,10 +12,18 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, CheeziMod.MOD_ID);
 
     // items
-    public static final RegistryObject<Item> CHEDDAR_CHEESE = ITEMS.register("cheddar_cheese",
-            () -> new Item(new Item.Properties()));
 
     // foods
+    public static final RegistryObject<Item> CHEDDAR_CHEESE = ITEMS.register("cheddar_cheese",
+            () -> new Item(new Item.Properties().food(ModFoods.CHEDDAR_CHEESE)));
+    public static final RegistryObject<Item> SWISS_CHEESE = ITEMS.register("swiss_cheese",
+            () -> new Item(new Item.Properties().food(ModFoods.SWISS_CHEESE)));
+    public static final RegistryObject<Item> BRIE_CHEESE = ITEMS.register("brie_cheese",
+            () -> new Item(new Item.Properties().food(ModFoods.BRIE_CHEESE)));
+    public static final RegistryObject<Item> PARMESAN_CHEESE  = ITEMS.register("parmesan_cheese",
+            () -> new Item(new Item.Properties().food(ModFoods.PARMESAN_CHEESE)));
+    public static final RegistryObject<Item> MOZZARELLA_CHEESE = ITEMS.register("mozzarella_cheese",
+            () -> new Item(new Item.Properties().food(ModFoods.MOZZARELLA_CHEESE)));
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
         () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
 

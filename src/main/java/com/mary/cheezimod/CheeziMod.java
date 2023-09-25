@@ -43,8 +43,8 @@ public class CheeziMod {
             event.accept(ModItems.CHEDDAR_CHEESE);
             event.accept(ModItems.STRAWBERRY);
             event.accept(ModItems.CHOC_STRAWBERRY);
-            event.accept(ModBlocks.CHEDDAR_BLOCK.get());
-            event.accept(ModBlocks.STRAWBERRY_BLOCK.get());
+//            event.accept(ModBlocks.CHEDDAR_BLOCK.get());
+//            event.accept(ModBlocks.STRAWBERRY_BLOCK.get());
         }
     }
 
