@@ -40,9 +40,9 @@ public class CheeziMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
-            event.accept(ModItems.CHEDDAR_CHEESE);
-            event.accept(ModItems.STRAWBERRY);
-            event.accept(ModItems.CHOC_STRAWBERRY);
+//            event.accept(ModItems.CHEDDAR_CHEESE);
+//            event.accept(ModItems.STRAWBERRY);
+//            event.accept(ModItems.CHOC_STRAWBERRY);
 //            event.accept(ModBlocks.CHEDDAR_BLOCK.get());
 //            event.accept(ModBlocks.STRAWBERRY_BLOCK.get());
         }

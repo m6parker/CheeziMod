@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "cheezimod:cheddar_cheese"
+    }
+  },
+  "result": {
+    "item": "cheezimod:cheddar_block"
+  }
+}
