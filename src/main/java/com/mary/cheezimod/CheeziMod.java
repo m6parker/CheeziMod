@@ -1,6 +1,7 @@
 package com.mary.cheezimod;
 
 import com.mary.cheezimod.block.ModBlocks;
+import com.mary.cheezimod.item.ModCreativeModeTabs;
 import com.mary.cheezimod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTab;
@@ -27,6 +28,7 @@ public class CheeziMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
@@ -37,13 +39,13 @@ public class CheeziMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-//        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
-//            event.accept(ModItems.CHEDDAR_CHEESE);
-//            event.accept(ModItems.STRAWBERRY);
-//            event.accept(ModItems.CHOC_STRAWBERRY);
-//            event.accept(ModBlocks.CHEDDAR_BLOCK.get());
-//            event.accept(ModBlocks.STRAWBERRY_BLOCK.get());
-//        }
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+            event.accept(ModItems.CHEDDAR_CHEESE);
+            event.accept(ModItems.STRAWBERRY);
+            event.accept(ModItems.CHOC_STRAWBERRY);
+            event.accept(ModBlocks.CHEDDAR_BLOCK.get());
+            event.accept(ModBlocks.STRAWBERRY_BLOCK.get());
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

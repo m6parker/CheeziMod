@@ -1,8 +1,8 @@
 {
-  "creativetab.cheezi_tab": "CheeziTab",
   "item.cheezimod.cheddar_cheese": "Cheddar Cheese",
   "item.cheezimod.strawberry": "Strawberry",
   "item.cheezimod.choc_strawberry": "Chocolate Covered Strawberry",
   "block.cheezimod.cheddar_block": "Block of Cheddar",
-  "block.cheezimod.strawberry_block": "Block of Strawberries"
+  "block.cheezimod.strawberry_block": "Block of Strawberries",
+  "creativetab.cheezi_tab": "CheeziTab"
 }
