@@ -1,7 +1,9 @@
 package com.mary.cheezimod.item;
 
 import com.mary.cheezimod.CheeziMod;
+import com.mary.cheezimod.block.ModBlocks;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -34,6 +36,8 @@ public class ModItems {
     public static final RegistryObject<Item> CHOC_STRAWBERRY = ITEMS.register("choc_strawberry",
             () -> new Item(new Item.Properties().food(ModFoods.CHOC_STRAWBERRY)));
 
+    public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(), new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

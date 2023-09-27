@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-26T20:22:13.9143016	Item Models: cheezimod
+// 1.20.1	2023-09-27T18:25:47.6569233	Item Models: cheezimod
 d02f93f76ad447f0caceece8962551ac627d1936 assets/cheezimod/models/item/brie_cheese.json
 7c1e9f7ee98b0ce8a23ea4f877ec8e183be03870 assets/cheezimod/models/item/cheddar_cheese.json
 aac0b61983e74fa38ea3d8e0b625cfd05c1047ca assets/cheezimod/models/item/choc_strawberry.json
@@ -6,4 +6,5 @@ ce933bf341cce39dd22eeb053607134214e74627 assets/cheezimod/models/item/mozzarella
 2dbbcf7443392a0028d750332fe31749458ca5e9 assets/cheezimod/models/item/parmesan_cheese.json
 663226e926b9928159974ee3ffe3482a63159f62 assets/cheezimod/models/item/strawberry.json
 3ece5d1b3a29b7cfc0fff46ebd7fb4db5651c2b4 assets/cheezimod/models/item/strawberry_milk.json
+ce5a53ea588d38522dc6743825d477e51a2f27c6 assets/cheezimod/models/item/strawberry_seeds.json
 20f365760a876059642bb958f5a3a10b8c2fc5f5 assets/cheezimod/models/item/swiss_cheese.json

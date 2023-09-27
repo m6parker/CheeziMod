@@ -1,6 +1,7 @@
 package com.mary.cheezimod.block;
 
 import com.mary.cheezimod.CheeziMod;
+import com.mary.cheezimod.block.custom.StrawberryCropBlock;
 import com.mary.cheezimod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -23,6 +24,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).sound(SoundType.HONEY_BLOCK)));
     public static final RegistryObject<Block> STRAWBERRY_BLOCK = registerBlock("strawberry_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM_BLOCK)));
+    public static final RegistryObject<Block> STRAWBERRY_CROP = BLOCKS.register("strawberry_crop",
+            () -> new StrawberryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
