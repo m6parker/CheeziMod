@@ -2,6 +2,7 @@ package com.mary.cheezimod.datagen;
 
 import com.mary.cheezimod.CheeziMod;
 import com.mary.cheezimod.block.ModBlocks;
+import com.mary.cheezimod.block.custom.AvocadoCropBlock;
 import com.mary.cheezimod.block.custom.StrawberryCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -25,7 +26,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.CHEDDAR_BLOCK);
         blockWithItem(ModBlocks.STRAWBERRY_BLOCK);
         makeStrawberryCrop((CropBlock) ModBlocks.STRAWBERRY_CROP.get(), "strawberry_stage", "strawberry_stage");
-
+        makeAvocadoCrop((CropBlock) ModBlocks.AVOCADO_CROP.get(), "avocado_stage", "avocado_stage");
     }
 
     public void makeStrawberryCrop(CropBlock block, String modelName, String textureName) {
@@ -38,6 +39,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((StrawberryCropBlock) block).getAgeProperty()),
                 new ResourceLocation(CheeziMod.MOD_ID, "block/" + textureName + state.getValue(((StrawberryCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+
+    public void makeAvocadoCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> avocadoStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] avocadoStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((AvocadoCropBlock) block).getAgeProperty()),
+                new ResourceLocation(CheeziMod.MOD_ID, "block/" + textureName + state.getValue(((AvocadoCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
     }

@@ -30,6 +30,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.STRAWBERRY_MILK.get());
                         pOutput.accept(ModItems.STRAWBERRY_SEEDS.get());
                         pOutput.accept(ModItems.STRAWBERRY_SWORD.get());
+                        pOutput.accept(ModItems.AVOCADO.get());
+                        pOutput.accept(ModItems.AVOCADO_SEEDS.get());
 
 //                        pOutput.accept(Items.DIAMOND);
 

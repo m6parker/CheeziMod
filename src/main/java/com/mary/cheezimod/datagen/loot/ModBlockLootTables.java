@@ -1,6 +1,7 @@
 package com.mary.cheezimod.datagen.loot;
 
 import com.mary.cheezimod.block.ModBlocks;
+import com.mary.cheezimod.block.custom.AvocadoCropBlock;
 import com.mary.cheezimod.block.custom.StrawberryCropBlock;
 import com.mary.cheezimod.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -35,9 +36,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.STRAWBERRY_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(StrawberryCropBlock.AGE, 5));
+        LootItemCondition.Builder lootitemcondition$builder2 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.AVOCADO_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AvocadoCropBlock.AGE, 5));
 
         this.add(ModBlocks.STRAWBERRY_CROP.get(), createCropDrops(ModBlocks.STRAWBERRY_CROP.get(), ModItems.STRAWBERRY.get(),
                 ModItems.STRAWBERRY_SEEDS.get(), lootitemcondition$builder));
+        this.add(ModBlocks.AVOCADO_CROP.get(), createCropDrops(ModBlocks.AVOCADO_CROP.get(), ModItems.AVOCADO.get(),
+                ModItems.AVOCADO_SEEDS.get(), lootitemcondition$builder2));
 
         //drops something other than itself
 

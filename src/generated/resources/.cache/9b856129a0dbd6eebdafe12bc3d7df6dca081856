@@ -1,7 +1,14 @@
-// 1.20.1	2023-09-27T18:36:59.2986346	Block States: cheezimod
+// 1.20.1	2023-09-27T19:19:39.4322621	Block States: cheezimod
+b481f0b230b98ab74ffadef7c4f545d8f5e55ebe assets/cheezimod/blockstates/avocado_crop.json
 171b5c0ef2cf6a6061217b86255b8f056cd61c5e assets/cheezimod/blockstates/cheddar_block.json
 85fab0fd223686f2a1b8d76a03d29f5040acca60 assets/cheezimod/blockstates/strawberry_block.json
 a16ad0a21fa566e2f493bcbba2d0f5ea6e5fbe3b assets/cheezimod/blockstates/strawberry_crop.json
+208db342aca6746009d5c24cb8edfee339c21b3e assets/cheezimod/models/block/avocado_stage0.json
+8586b329d5e16e5abda29025d3b3c6f90d5cf86d assets/cheezimod/models/block/avocado_stage1.json
+99b7e5acb0f27e728dda3113b1d846fd250eb7c2 assets/cheezimod/models/block/avocado_stage2.json
+13b018babcb91ae07838f621304ccdf4aa61c505 assets/cheezimod/models/block/avocado_stage3.json
+6426876a7268bacadd1ae1ecdd2537eb6f8ef035 assets/cheezimod/models/block/avocado_stage4.json
+e7470d1d6d6ced47f353e7a3e945ba8b44fcc736 assets/cheezimod/models/block/avocado_stage5.json
 fe498a0ff21fd7d9f4cf3f824281e0698db64ac9 assets/cheezimod/models/block/cheddar_block.json
 a4e7066fe29416f9fec267434fc824113ac0c716 assets/cheezimod/models/block/strawberry_block.json
 c6e3f93194289df3203da84dcbd4fbd016f6047d assets/cheezimod/models/block/strawberry_stage0.json

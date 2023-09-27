@@ -28,6 +28,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CHOC_STRAWBERRY);
         simpleItem(ModItems.STRAWBERRY_MILK);
         simpleItem(ModItems.STRAWBERRY_SEEDS);
+        simpleItem(ModItems.AVOCADO);
+        simpleItem(ModItems.AVOCADO_SEEDS);
 //        simpleItem(ModItems.STRAWBERRY_SWORD);
     }
 
