@@ -25,6 +25,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.STRAWBERRY);
         simpleItem(ModItems.CHOC_STRAWBERRY);
         simpleItem(ModItems.STRAWBERRY_MILK);
+//        simpleItem(ModItems.STRAWBERRY_SWORD);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

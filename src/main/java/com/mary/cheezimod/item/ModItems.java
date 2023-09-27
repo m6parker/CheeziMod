@@ -12,6 +12,8 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, CheeziMod.MOD_ID);
 
     // items
+    public static final RegistryObject<Item> STRAWBERRY_SWORD = ITEMS.register("strawberry_sword",
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
     // foods
     public static final RegistryObject<Item> CHEDDAR_CHEESE = ITEMS.register("cheddar_cheese",

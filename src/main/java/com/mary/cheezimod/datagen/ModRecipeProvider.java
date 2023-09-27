@@ -3,8 +3,11 @@ package com.mary.cheezimod.datagen;
 import com.mary.cheezimod.CheeziMod;
 import com.mary.cheezimod.block.ModBlocks;
 import com.mary.cheezimod.item.ModItems;
+import net.minecraft.client.Minecraft;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.entity.vehicle.Minecart;
+import net.minecraft.world.item.MapItem;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -28,6 +31,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 //        oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 200, "sapphire");
 //        oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 100, "sapphire");
 
+        // BLOCKS
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHEDDAR_BLOCK.get())
                 .pattern("###")
                 .pattern("###")
@@ -42,6 +46,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', ModItems.STRAWBERRY.get())
                 .unlockedBy(getHasName(ModItems.STRAWBERRY.get()), has(ModItems.STRAWBERRY.get()))
                 .save(pWriter);
+        // ITEMS / TOOLS
+//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STRAWBERRY_SWORD.get())
+//                .pattern(" # ")
+//                .pattern(" # ")
+//                .pattern(" # ")
+//                .define('#', ModItems.STRAWBERRY.get())
+//                .unlockedBy(getHasName(ModItems.STRAWBERRY.get()), has(ModItems.STRAWBERRY.get()))
+//                .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHEDDAR_CHEESE.get(), 9)
                 .requires(ModBlocks.CHEDDAR_BLOCK.get())

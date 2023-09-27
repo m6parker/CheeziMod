@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cheddar_cheese": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cheezimod:cheddar_cheese"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cheezimod:cheddar_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cheddar_cheese",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cheezimod:cheddar_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}
