@@ -13,6 +13,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import net.minecraftforge.fml.common.Mod;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -47,13 +48,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.STRAWBERRY.get()), has(ModItems.STRAWBERRY.get()))
                 .save(pWriter);
         // ITEMS / TOOLS
-//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STRAWBERRY_SWORD.get())
-//                .pattern(" # ")
-//                .pattern(" # ")
-//                .pattern(" # ")
-//                .define('#', ModItems.STRAWBERRY.get())
-//                .unlockedBy(getHasName(ModItems.STRAWBERRY.get()), has(ModItems.STRAWBERRY.get()))
-//                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STRAWBERRY_SWORD.get())
+                .pattern("#")
+                .pattern("#")
+                .pattern("#")
+                .define('#', ModItems.STRAWBERRY.get())
+//                .define('s', )
+                .unlockedBy(getHasName(ModItems.STRAWBERRY.get()), has(ModItems.STRAWBERRY.get()))
+                .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHEDDAR_CHEESE.get(), 9)
                 .requires(ModBlocks.CHEDDAR_BLOCK.get())
@@ -62,6 +64,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.STRAWBERRY.get(), 9)
                 .requires(ModBlocks.STRAWBERRY_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.STRAWBERRY_BLOCK.get()), has(ModBlocks.STRAWBERRY_BLOCK.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.STRAWBERRY_MILK.get(), 1)
+                .requires(ModItems.STRAWBERRY.get())
+                .requires(ModItems.CHOC_STRAWBERRY.get())
+                .unlockedBy(getHasName(ModItems.STRAWBERRY.get()), has(ModItems.STRAWBERRY.get()))
                 .save(pWriter);
     }
 

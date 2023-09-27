@@ -3,6 +3,7 @@ package com.mary.cheezimod;
 import com.mary.cheezimod.block.ModBlocks;
 import com.mary.cheezimod.item.ModCreativeModeTabs;
 import com.mary.cheezimod.item.ModItems;
+import com.mary.cheezimod.loot.ModLootModifiers;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -28,6 +29,7 @@ public class CheeziMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
