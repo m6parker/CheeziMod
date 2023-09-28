@@ -37,11 +37,19 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.CHOC_STRAWBERRY)));
     public static final RegistryObject<Item> AVOCADO = ITEMS.register("avocado",
             () -> new Item(new Item.Properties().food(ModFoods.AVOCADO)));
+    public static final RegistryObject<Item> BASIL = ITEMS.register("basil",
+            () -> new Item(new Item.Properties().food(ModFoods.BASIL)));
+    public static final RegistryObject<Item> GRAPE = ITEMS.register("grape",
+            () -> new Item(new Item.Properties().food(ModFoods.GRAPE)));
 
     public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds",
             () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> AVOCADO_SEEDS = ITEMS.register("avocado_seeds",
             () -> new ItemNameBlockItem(ModBlocks.AVOCADO_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> GRAPE_SEEDS = ITEMS.register("grape_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.GRAPE_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BASIL_SEEDS = ITEMS.register("basil_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.BASIL_CROP.get(), new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -78,6 +78,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.STRAWBERRY.get())
                 .unlockedBy(getHasName(ModItems.STRAWBERRY.get()), has(ModItems.STRAWBERRY.get()))
                 .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GRAPE_SEEDS.get(), 1)
+                .requires(ModItems.GRAPE.get())
+                .unlockedBy(getHasName(ModItems.GRAPE.get()), has(ModItems.GRAPE.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BASIL_SEEDS.get(), 1)
+                .requires(ModItems.BASIL.get())
+                .unlockedBy(getHasName(ModItems.BASIL.get()), has(ModItems.BASIL.get()))
+                .save(pWriter);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

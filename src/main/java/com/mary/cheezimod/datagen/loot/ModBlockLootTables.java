@@ -2,6 +2,8 @@ package com.mary.cheezimod.datagen.loot;
 
 import com.mary.cheezimod.block.ModBlocks;
 import com.mary.cheezimod.block.custom.AvocadoCropBlock;
+import com.mary.cheezimod.block.custom.BasilCropBlock;
+import com.mary.cheezimod.block.custom.GrapeCropBlock;
 import com.mary.cheezimod.block.custom.StrawberryCropBlock;
 import com.mary.cheezimod.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -39,11 +41,21 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         LootItemCondition.Builder lootitemcondition$builder2 = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.AVOCADO_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AvocadoCropBlock.AGE, 5));
+        LootItemCondition.Builder lootitemcondition$builder3 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.GRAPE_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(GrapeCropBlock.AGE, 5));
+        LootItemCondition.Builder lootitemcondition$builder4 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.BASIL_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BasilCropBlock.AGE, 5));
 
         this.add(ModBlocks.STRAWBERRY_CROP.get(), createCropDrops(ModBlocks.STRAWBERRY_CROP.get(), ModItems.STRAWBERRY.get(),
                 ModItems.STRAWBERRY_SEEDS.get(), lootitemcondition$builder));
         this.add(ModBlocks.AVOCADO_CROP.get(), createCropDrops(ModBlocks.AVOCADO_CROP.get(), ModItems.AVOCADO.get(),
                 ModItems.AVOCADO_SEEDS.get(), lootitemcondition$builder2));
+        this.add(ModBlocks.GRAPE_CROP.get(), createCropDrops(ModBlocks.GRAPE_CROP.get(), ModItems.GRAPE.get(),
+                ModItems.GRAPE_SEEDS.get(), lootitemcondition$builder3));
+        this.add(ModBlocks.BASIL_CROP.get(), createCropDrops(ModBlocks.BASIL_CROP.get(), ModItems.BASIL.get(),
+                ModItems.BASIL_SEEDS.get(), lootitemcondition$builder4));
 
         //drops something other than itself
 

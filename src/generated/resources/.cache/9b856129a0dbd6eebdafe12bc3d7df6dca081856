@@ -1,6 +1,8 @@
-// 1.20.1	2023-09-27T19:19:39.4322621	Block States: cheezimod
+// 1.20.1	2023-09-27T22:07:02.3994864	Block States: cheezimod
 b481f0b230b98ab74ffadef7c4f545d8f5e55ebe assets/cheezimod/blockstates/avocado_crop.json
+c9b264155ba1f7afc7aa8fa7b49aca385ab38598 assets/cheezimod/blockstates/basil_crop.json
 171b5c0ef2cf6a6061217b86255b8f056cd61c5e assets/cheezimod/blockstates/cheddar_block.json
+5c6d1ca0e38cfd8e44861d7cc7449cad8f61fff7 assets/cheezimod/blockstates/grape_crop.json
 85fab0fd223686f2a1b8d76a03d29f5040acca60 assets/cheezimod/blockstates/strawberry_block.json
 a16ad0a21fa566e2f493bcbba2d0f5ea6e5fbe3b assets/cheezimod/blockstates/strawberry_crop.json
 208db342aca6746009d5c24cb8edfee339c21b3e assets/cheezimod/models/block/avocado_stage0.json
@@ -9,7 +11,19 @@ a16ad0a21fa566e2f493bcbba2d0f5ea6e5fbe3b assets/cheezimod/blockstates/strawberry
 13b018babcb91ae07838f621304ccdf4aa61c505 assets/cheezimod/models/block/avocado_stage3.json
 6426876a7268bacadd1ae1ecdd2537eb6f8ef035 assets/cheezimod/models/block/avocado_stage4.json
 e7470d1d6d6ced47f353e7a3e945ba8b44fcc736 assets/cheezimod/models/block/avocado_stage5.json
+74dcf37268a4dac9e62fdf0842d107f41e07025f assets/cheezimod/models/block/basil_stage0.json
+87e57f9db827d909b956b2cd9da986b674c70e17 assets/cheezimod/models/block/basil_stage1.json
+4b3ae1552caf1bc8e4cc98c80c95d7946de6b286 assets/cheezimod/models/block/basil_stage2.json
+27decb1465160ea730fb617514e9f007429b231c assets/cheezimod/models/block/basil_stage3.json
+f9a67542c8dec684951426b8df3b1c48d9c0c0bd assets/cheezimod/models/block/basil_stage4.json
+b1dabb742f3f1e6963926bde7232ecd97309681b assets/cheezimod/models/block/basil_stage5.json
 fe498a0ff21fd7d9f4cf3f824281e0698db64ac9 assets/cheezimod/models/block/cheddar_block.json
+0356910094d85912e9007d9939dae482063c795e assets/cheezimod/models/block/grape_stage0.json
+8508cf5fe9df42458fe3b080e724c7182ebdf254 assets/cheezimod/models/block/grape_stage1.json
+57984bcd8bfa78896e4e2890feeccd0b71a16838 assets/cheezimod/models/block/grape_stage2.json
+ef9ba96cbd55820b8a703fc5bfc7f93808d2361c assets/cheezimod/models/block/grape_stage3.json
+7ca26a1ae604341955d8caf27c6e2a53c2cc1579 assets/cheezimod/models/block/grape_stage4.json
+4289b06ff694a62ff55a811938f0828763d9f342 assets/cheezimod/models/block/grape_stage5.json
 a4e7066fe29416f9fec267434fc824113ac0c716 assets/cheezimod/models/block/strawberry_block.json
 c6e3f93194289df3203da84dcbd4fbd016f6047d assets/cheezimod/models/block/strawberry_stage0.json
 39bfddc25ae842d4addf6a96fcf9bcc43fb628d6 assets/cheezimod/models/block/strawberry_stage1.json
