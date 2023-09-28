@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cheezimod:avocado"
+    }
+  ],
+  "result": {
+    "item": "cheezimod:avocado_seeds"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cheezimod:strawberry"
+    }
+  ],
+  "result": {
+    "item": "cheezimod:strawberry_seeds"
+  }
+}
