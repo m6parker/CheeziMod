@@ -1,10 +1,7 @@
 package com.mary.cheezimod.datagen.loot;
 
 import com.mary.cheezimod.block.ModBlocks;
-import com.mary.cheezimod.block.custom.AvocadoCropBlock;
-import com.mary.cheezimod.block.custom.BasilCropBlock;
-import com.mary.cheezimod.block.custom.GrapeCropBlock;
-import com.mary.cheezimod.block.custom.StrawberryCropBlock;
+import com.mary.cheezimod.block.custom.*;
 import com.mary.cheezimod.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -47,6 +44,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         LootItemCondition.Builder lootitemcondition$builder4 = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.BASIL_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BasilCropBlock.AGE, 5));
+        LootItemCondition.Builder lootitemcondition$builder5 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.TOMATO_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(TomatoCropBlock.AGE, 5));
 
         this.add(ModBlocks.STRAWBERRY_CROP.get(), createCropDrops(ModBlocks.STRAWBERRY_CROP.get(), ModItems.STRAWBERRY.get(),
                 ModItems.STRAWBERRY_SEEDS.get(), lootitemcondition$builder));
@@ -56,6 +56,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 ModItems.GRAPE_SEEDS.get(), lootitemcondition$builder3));
         this.add(ModBlocks.BASIL_CROP.get(), createCropDrops(ModBlocks.BASIL_CROP.get(), ModItems.BASIL.get(),
                 ModItems.BASIL_SEEDS.get(), lootitemcondition$builder4));
+        this.add(ModBlocks.TOMATO_CROP.get(), createCropDrops(ModBlocks.TOMATO_CROP.get(), ModItems.TOMATO.get(),
+                ModItems.TOMATO_SEEDS.get(), lootitemcondition$builder5));
 
         //drops something other than itself
 

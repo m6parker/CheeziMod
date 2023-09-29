@@ -86,6 +86,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.BASIL.get())
                 .unlockedBy(getHasName(ModItems.BASIL.get()), has(ModItems.BASIL.get()))
                 .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TOMATO_SEEDS.get(), 1)
+                .requires(ModItems.TOMATO.get())
+                .unlockedBy(getHasName(ModItems.TOMATO.get()), has(ModItems.TOMATO.get()))
+                .save(pWriter);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

@@ -34,6 +34,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GRAPE_SEEDS);
         simpleItem(ModItems.BASIL);
         simpleItem(ModItems.BASIL_SEEDS);
+        simpleItem(ModItems.TOMATO);
+        simpleItem(ModItems.TOMATO_SEEDS);
 //        simpleItem(ModItems.STRAWBERRY_SWORD);
     }
 

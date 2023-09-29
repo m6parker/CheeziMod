@@ -2,10 +2,7 @@ package com.mary.cheezimod.datagen;
 
 import com.mary.cheezimod.CheeziMod;
 import com.mary.cheezimod.block.ModBlocks;
-import com.mary.cheezimod.block.custom.AvocadoCropBlock;
-import com.mary.cheezimod.block.custom.BasilCropBlock;
-import com.mary.cheezimod.block.custom.GrapeCropBlock;
-import com.mary.cheezimod.block.custom.StrawberryCropBlock;
+import com.mary.cheezimod.block.custom.*;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
@@ -31,6 +28,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         makeAvocadoCrop((CropBlock) ModBlocks.AVOCADO_CROP.get(), "avocado_stage", "avocado_stage");
         makeGrapeCrop((CropBlock) ModBlocks.GRAPE_CROP.get(), "grape_stage", "grape_stage");
         makeBasilCrop((CropBlock) ModBlocks.BASIL_CROP.get(), "basil_stage", "basil_stage");
+        makeTomatoCrop((CropBlock) ModBlocks.TOMATO_CROP.get(), "tomato_stage", "tomato_stage");
 
     }
 
@@ -44,6 +42,19 @@ public class ModBlockStateProvider extends BlockStateProvider {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((StrawberryCropBlock) block).getAgeProperty()),
                 new ResourceLocation(CheeziMod.MOD_ID, "block/" + textureName + state.getValue(((StrawberryCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+    public void makeTomatoCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> tomatoStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] tomatoStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((TomatoCropBlock) block).getAgeProperty()),
+                new ResourceLocation(CheeziMod.MOD_ID, "block/" + textureName + state.getValue(((TomatoCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
     }

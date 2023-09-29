@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cheezimod:grape"
+    }
+  ],
+  "result": {
+    "item": "cheezimod:grape_seeds"
+  }
+}

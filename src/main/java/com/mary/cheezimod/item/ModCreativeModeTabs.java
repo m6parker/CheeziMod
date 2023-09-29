@@ -36,6 +36,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.GRAPE_SEEDS.get());
                         pOutput.accept(ModItems.BASIL.get());
                         pOutput.accept(ModItems.BASIL_SEEDS.get());
+                        pOutput.accept(ModItems.TOMATO.get());
+                        pOutput.accept(ModItems.TOMATO_SEEDS.get());
 
 //                        pOutput.accept(Items.DIAMOND);
 

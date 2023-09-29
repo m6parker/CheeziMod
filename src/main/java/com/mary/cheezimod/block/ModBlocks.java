@@ -1,10 +1,7 @@
 package com.mary.cheezimod.block;
 
 import com.mary.cheezimod.CheeziMod;
-import com.mary.cheezimod.block.custom.AvocadoCropBlock;
-import com.mary.cheezimod.block.custom.BasilCropBlock;
-import com.mary.cheezimod.block.custom.GrapeCropBlock;
-import com.mary.cheezimod.block.custom.StrawberryCropBlock;
+import com.mary.cheezimod.block.custom.*;
 import com.mary.cheezimod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -36,6 +33,8 @@ public class ModBlocks {
             () -> new GrapeCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().noOcclusion()));
     public static final RegistryObject<Block> BASIL_CROP = BLOCKS.register("basil_crop",
             () -> new BasilCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().noOcclusion()));
+    public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop",
+            () -> new TomatoCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
