@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-28T20:46:59.7308333	Item Models: cheezimod
+// 1.20.1	2023-09-30T17:39:54.8149575	Item Models: cheezimod
 b96e529a3a564c3a1751f5886d445bc930f2724c assets/cheezimod/models/item/avocado.json
 5fede2acbbed134e3fab594a1eece70a1c4654a6 assets/cheezimod/models/item/avocado_seeds.json
 4d9da58d19485ab194a5ee1aa9265aea7cc3f146 assets/cheezimod/models/item/basil.json
@@ -8,6 +8,7 @@ d02f93f76ad447f0caceece8962551ac627d1936 assets/cheezimod/models/item/brie_chees
 aac0b61983e74fa38ea3d8e0b625cfd05c1047ca assets/cheezimod/models/item/choc_strawberry.json
 f35fb85adfe5ae8cb513c13caec56bc279915620 assets/cheezimod/models/item/grape.json
 8dba4e81cfaf878c933c39ff629eef1e52a3c756 assets/cheezimod/models/item/grape_seeds.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/cheezimod/models/item/mouse_spawn_egg.json
 ce933bf341cce39dd22eeb053607134214e74627 assets/cheezimod/models/item/mozzarella_cheese.json
 2dbbcf7443392a0028d750332fe31749458ca5e9 assets/cheezimod/models/item/parmesan_cheese.json
 663226e926b9928159974ee3ffe3482a63159f62 assets/cheezimod/models/item/strawberry.json

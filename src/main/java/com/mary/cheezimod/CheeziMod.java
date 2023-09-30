@@ -1,10 +1,13 @@
 package com.mary.cheezimod;
 
 import com.mary.cheezimod.block.ModBlocks;
+import com.mary.cheezimod.entity.ModEntityTypes;
+import com.mary.cheezimod.entity.client.MouseRenderer;
 import com.mary.cheezimod.item.ModCreativeModeTabs;
 import com.mary.cheezimod.item.ModItems;
 import com.mary.cheezimod.loot.ModLootModifiers;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -31,6 +34,7 @@ public class CheeziMod {
         ModBlocks.register(modEventBus);
         ModLootModifiers.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModEntityTypes.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
@@ -61,7 +65,7 @@ public class CheeziMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            EntityRenderers.register(ModEntityTypes.MOUSE.get(), MouseRenderer::new);
         }
     }
 }

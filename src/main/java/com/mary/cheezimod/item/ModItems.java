@@ -2,8 +2,10 @@ package com.mary.cheezimod.item;
 
 import com.mary.cheezimod.CheeziMod;
 import com.mary.cheezimod.block.ModBlocks;
+import com.mary.cheezimod.entity.ModEntityTypes;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -54,6 +56,9 @@ public class ModItems {
             () -> new ItemNameBlockItem(ModBlocks.BASIL_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds",
             () -> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MOUSE_SPAWN_EGG = ITEMS.register("mouse_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.MOUSE,
+                    0x100000,0x100000, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
