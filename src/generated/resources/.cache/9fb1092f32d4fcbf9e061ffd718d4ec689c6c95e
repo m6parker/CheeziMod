@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-28T20:46:59.7308333	Recipes
+// 1.20.1	2023-09-30T19:16:14.62079	Recipes
 983c1bf398670633158a5acc4887a3f8c71fff84 data/cheezimod/advancements/recipes/misc/avocado_seeds.json
 b6947ebe5b4e1e36558d2721405da23a70b23017 data/cheezimod/advancements/recipes/misc/basil_seeds.json
 0fc84ca02569be09d793578b67f265f02ebd4480 data/cheezimod/advancements/recipes/misc/cheddar_block.json
@@ -17,7 +17,7 @@ f894400603e51811b7cf66faca6729b03e5c5813 data/cheezimod/recipes/cheddar_block.js
 87cba230f1ee280cf1d2a6d47b47dcaf833a55e4 data/cheezimod/recipes/grape_seeds.json
 3157d73c78d12ca1880768edeb301b6742bbcc4b data/cheezimod/recipes/strawberry.json
 f8610a4a95313e7b94ad5adc78ad64ab5bb199d0 data/cheezimod/recipes/strawberry_block.json
-6c2657c71e309d0d42b26ae1f8c850e17394bc4e data/cheezimod/recipes/strawberry_milk.json
+b54880a767683e87d5ac33c288f1bfd452013f3e data/cheezimod/recipes/strawberry_milk.json
 eed6d233457ed8120669a8008f4a09263f185bdf data/cheezimod/recipes/strawberry_seeds.json
 0392d9be2bd066dd342e9d5b14a595419588f6c7 data/cheezimod/recipes/strawberry_sword.json
 0c62717b5ae152e6747070c0120c59cf9cb155b5 data/cheezimod/recipes/tomato_seeds.json

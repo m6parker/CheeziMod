@@ -44,6 +44,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CHEDDAR_BLOCK.get());
                         pOutput.accept(ModBlocks.STRAWBERRY_BLOCK.get());
 
+                        pOutput.accept(ModItems.MOUSE_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.LADYBUG_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.STRAWBERRY_COW_SPAWN_EGG.get());
+
                     })
                     .build());
 

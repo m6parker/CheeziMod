@@ -1,7 +1,9 @@
 package com.mary.cheezimod.entity;
 
 import com.mary.cheezimod.CheeziMod;
+import com.mary.cheezimod.entity.custom.LadybugEntity;
 import com.mary.cheezimod.entity.custom.MouseEntity;
+import com.mary.cheezimod.entity.custom.StrawberryCowEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -19,6 +21,16 @@ public class ModEntityTypes {
                     () -> EntityType.Builder.of(MouseEntity::new, MobCategory.CREATURE)
                             .sized(1.5f, 1.75f)
                             .build(new ResourceLocation(CheeziMod.MOD_ID, "mouse").toString()));
+    public static final RegistryObject<EntityType<LadybugEntity>> LADYBUG =
+            ENTITY_TYPES.register("ladybug",
+                    () -> EntityType.Builder.of(LadybugEntity::new, MobCategory.CREATURE)
+                            .sized(1.5f, 1.75f)
+                            .build(new ResourceLocation(CheeziMod.MOD_ID, "ladybug").toString()));
+    public static final RegistryObject<EntityType<StrawberryCowEntity>> STRAWBERRY_COW =
+            ENTITY_TYPES.register("strawberry_cow",
+                    () -> EntityType.Builder.of(StrawberryCowEntity::new, MobCategory.CREATURE)
+                            .sized(1.5f, 1.75f)
+                            .build(new ResourceLocation(CheeziMod.MOD_ID, "strawberry_cow").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
