@@ -1,6 +1,9 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
+		"animation.model.new": {
+			"loop": true
+		},
 		"animation.mouse.idle": {
 			"loop": true,
 			"animation_length": 0.95833,
@@ -58,7 +61,7 @@
 				}
 			}
 		},
-		"animation.mouse.walk2": {
+		"animation.mouse.walk": {
 			"loop": true,
 			"animation_length": 0.83333,
 			"bones": {

@@ -1,6 +1,9 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
+		"animation.model.new": {
+			"loop": true
+		},
 		"animation.ladybug.idle": {
 			"loop": true,
 			"animation_length": 1,
@@ -17,6 +20,60 @@
 							"vector": [0, -0.2, 0]
 						},
 						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.ladybug.walk": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"legs": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 0, -17.5]
+						},
+						"0.5833": {
+							"vector": [0, 0, 20]
+						},
+						"0.9167": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"body": {
+					"position": {
+						"0.0417": {
+							"vector": [0, 0, 0]
+						},
+						"0.2917": {
+							"vector": [0, -0.2, 0]
+						},
+						"0.5833": {
+							"vector": [0, 0.5, 0]
+						},
+						"0.9583": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0417": {
+							"vector": [0, 0, 0]
+						},
+						"0.375": {
+							"vector": [0, -20, 0]
+						},
+						"0.7083": {
+							"vector": [0, 17.5, 0]
+						},
+						"0.9583": {
 							"vector": [0, 0, 0]
 						}
 					}
