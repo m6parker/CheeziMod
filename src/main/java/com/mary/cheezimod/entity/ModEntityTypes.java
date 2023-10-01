@@ -1,6 +1,7 @@
 package com.mary.cheezimod.entity;
 
 import com.mary.cheezimod.CheeziMod;
+import com.mary.cheezimod.entity.custom.DairyCowEntity;
 import com.mary.cheezimod.entity.custom.LadybugEntity;
 import com.mary.cheezimod.entity.custom.MouseEntity;
 import com.mary.cheezimod.entity.custom.StrawberryCowEntity;
@@ -31,6 +32,11 @@ public class ModEntityTypes {
                     () -> EntityType.Builder.of(StrawberryCowEntity::new, MobCategory.CREATURE)
                             .sized(1.5f, 1.75f)
                             .build(new ResourceLocation(CheeziMod.MOD_ID, "strawberry_cow").toString()));
+    public static final RegistryObject<EntityType<DairyCowEntity>> DAIRY_COW =
+            ENTITY_TYPES.register("dairy_cow",
+                    () -> EntityType.Builder.of(DairyCowEntity::new, MobCategory.CREATURE)
+                            .sized(1.5f, 1.75f)
+                            .build(new ResourceLocation(CheeziMod.MOD_ID, "dairy_cow").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
