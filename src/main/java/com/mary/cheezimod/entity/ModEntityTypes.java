@@ -1,10 +1,7 @@
 package com.mary.cheezimod.entity;
 
 import com.mary.cheezimod.CheeziMod;
-import com.mary.cheezimod.entity.custom.DairyCowEntity;
-import com.mary.cheezimod.entity.custom.LadybugEntity;
-import com.mary.cheezimod.entity.custom.MouseEntity;
-import com.mary.cheezimod.entity.custom.StrawberryCowEntity;
+import com.mary.cheezimod.entity.custom.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -37,6 +34,11 @@ public class ModEntityTypes {
                     () -> EntityType.Builder.of(DairyCowEntity::new, MobCategory.CREATURE)
                             .sized(1.5f, 1.75f)
                             .build(new ResourceLocation(CheeziMod.MOD_ID, "dairy_cow").toString()));
+    public static final RegistryObject<EntityType<MossyCowEntity>> MOSSY_COW =
+            ENTITY_TYPES.register("mossy_cow",
+                    () -> EntityType.Builder.of(MossyCowEntity::new, MobCategory.CREATURE)
+                            .sized(1.5f, 1.75f)
+                            .build(new ResourceLocation(CheeziMod.MOD_ID, "mossy_cow").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

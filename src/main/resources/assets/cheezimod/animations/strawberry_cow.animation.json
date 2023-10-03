@@ -33,7 +33,7 @@
 				}
 			}
 		},
-		"animation.strawberry_cow_walk": {
+		"animation.strawberry_cow.walk": {
 			"loop": true,
 			"animation_length": 0.91667,
 			"bones": {
