@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.strawberry_cow.idle": {
+		"animation.dairy_cow.idle": {
 			"loop": true,
 			"animation_length": 1.04167,
 			"bones": {
@@ -33,7 +33,7 @@
 				}
 			}
 		},
-		"animation.strawberry_cow_walk": {
+		"animation.dairy_cow.walk": {
 			"loop": true,
 			"animation_length": 0.91667,
 			"bones": {
