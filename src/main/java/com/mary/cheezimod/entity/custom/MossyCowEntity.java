@@ -104,10 +104,10 @@ public class MossyCowEntity extends Animal implements GeoEntity {
 
     private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
         if(tAnimationState.isMoving()){
-            tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.dairy_cow.walk", Animation.LoopType.LOOP));
+            tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.mossy_cow.walk", Animation.LoopType.LOOP));
             return PlayState.CONTINUE;
         }
-        tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.dairy_cow.idle", Animation.LoopType.LOOP));
+        tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.mossy_cow.idle", Animation.LoopType.LOOP));
         return PlayState.CONTINUE;
     }
 
