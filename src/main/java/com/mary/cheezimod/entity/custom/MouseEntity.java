@@ -93,9 +93,9 @@ public class MouseEntity extends Animal implements GeoEntity {
         return cache;
     }
 
-    @Override
-    public double getTick(Object o) {
-        return 0;
-    }
+//    @Override
+//    public double getTick(Object o) {
+//        return 0;
+//    }
 
 }
