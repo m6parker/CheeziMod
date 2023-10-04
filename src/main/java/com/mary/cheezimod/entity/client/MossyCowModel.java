@@ -23,14 +23,14 @@ public class MossyCowModel extends GeoModel<MossyCowEntity> {
     public ResourceLocation getModelResource(MossyCowEntity animatable) {
         return new ResourceLocation(CheeziMod.MOD_ID, "geo/mossy_cow.geo.json");
     }
-
+    @Override
     public ResourceLocation getTextureResource(MossyCowEntity animatable) {
         return new ResourceLocation(CheeziMod.MOD_ID, "textures/entity/mossy_cow_texture.png");
     }
 
     @Override
     public ResourceLocation getAnimationResource(MossyCowEntity animatable) {
-        return new ResourceLocation(CheeziMod.MOD_ID, "animations/dairy_cow.animation.json");
+        return new ResourceLocation(CheeziMod.MOD_ID, "animations/mossy_cow.animation.json");
     }
     @Override
     public void setCustomAnimations(MossyCowEntity animatable, long instanceId, AnimationState<MossyCowEntity> animationState) {
