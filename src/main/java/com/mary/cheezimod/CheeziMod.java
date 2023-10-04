@@ -2,10 +2,7 @@ package com.mary.cheezimod;
 
 import com.mary.cheezimod.block.ModBlocks;
 import com.mary.cheezimod.entity.ModEntityTypes;
-import com.mary.cheezimod.entity.client.DairyCowRenderer;
-import com.mary.cheezimod.entity.client.LadybugRenderer;
-import com.mary.cheezimod.entity.client.MouseRenderer;
-import com.mary.cheezimod.entity.client.StrawberryCowRenderer;
+import com.mary.cheezimod.entity.client.*;
 import com.mary.cheezimod.item.ModCreativeModeTabs;
 import com.mary.cheezimod.item.ModItems;
 import com.mary.cheezimod.loot.ModLootModifiers;
@@ -72,6 +69,7 @@ public class CheeziMod {
             EntityRenderers.register(ModEntityTypes.LADYBUG.get(), LadybugRenderer::new);
             EntityRenderers.register(ModEntityTypes.STRAWBERRY_COW.get(), StrawberryCowRenderer::new);
             EntityRenderers.register(ModEntityTypes.DAIRY_COW.get(), DairyCowRenderer::new);
+            EntityRenderers.register(ModEntityTypes.MOSSY_COW.get(), MossyCowRenderer::new);
         }
     }
 }
