@@ -12,9 +12,15 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.animal.Chicken;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
@@ -24,6 +30,7 @@ import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
 
 public class StrawberryChickenEntity extends Animal implements GeoEntity {
+    public int eggTime = this.random.nextInt(6000) + 6000;
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
     public StrawberryChickenEntity(EntityType<? extends Animal> entityType, Level level) {
         super(entityType, level);
@@ -62,10 +69,23 @@ public class StrawberryChickenEntity extends Animal implements GeoEntity {
     public AgeableMob getBreedOffspring(ServerLevel level, AgeableMob ageableMob) {
         return ModEntityTypes.STRAWBERRY_CHICKEN.get().create(level);
     }
+    @Override
+    public boolean isFood(ItemStack pStack){
+        return pStack.is(Items.WHEAT_SEEDS);
+    }
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
         controllerRegistrar.add(new AnimationController<>(this,"controller",0,this::predicate));
+    }
+//    if (!this.isBaby() && --this.eggTime <= 0) {
+//        this.playSound(SoundEvents.CHICKEN_EGG, 1.0F, (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
+//        this.spawnAtLocation(ModItems.STRAWBERRY_COW_SPAWN_EGG);
+//        this.gameEvent(GameEvent.ENTITY_PLACE);
+//        this.eggTime = this.random.nextInt(6000) + 6000;
+//    }
+
+    private void spawnAtLocation(RegistryObject<Item> strawberryCowSpawnEgg) {
     }
 
     private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
