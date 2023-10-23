@@ -16,6 +16,7 @@ public class ModEvents {
         event.put(ModEntityTypes.STRAWBERRY_COW.get(), StrawberryCowEntity.setAttributes());
         event.put(ModEntityTypes.DAIRY_COW.get(), DairyCowEntity.setAttributes());
         event.put(ModEntityTypes.MOSSY_COW.get(), MossyCowEntity.setAttributes());
+        event.put(ModEntityTypes.STRAWBERRY_CHICKEN.get(), StrawberryChickenEntity.setAttributes());
     }
 
 }

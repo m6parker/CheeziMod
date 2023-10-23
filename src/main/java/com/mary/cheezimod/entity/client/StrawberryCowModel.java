@@ -1,9 +1,7 @@
 package com.mary.cheezimod.entity.client;
 
 import com.mary.cheezimod.CheeziMod;
-import com.mary.cheezimod.entity.custom.MouseEntity;
 import com.mary.cheezimod.entity.custom.StrawberryCowEntity;
-import net.minecraft.client.model.EntityModel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import software.bernie.geckolib.constant.DataTickets;

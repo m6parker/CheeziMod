@@ -39,6 +39,11 @@ public class ModEntityTypes {
                     () -> EntityType.Builder.of(MossyCowEntity::new, MobCategory.CREATURE)
                             .sized(1.5f, 1.75f)
                             .build(new ResourceLocation(CheeziMod.MOD_ID, "mossy_cow").toString()));
+    public static final RegistryObject<EntityType<StrawberryChickenEntity>> STRAWBERRY_CHICKEN =
+            ENTITY_TYPES.register("strawberry_chicken",
+                    () -> EntityType.Builder.of(StrawberryChickenEntity::new, MobCategory.CREATURE)
+                            .sized(1.5f, 1.75f)
+                            .build(new ResourceLocation(CheeziMod.MOD_ID, "strawberry_chicken").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

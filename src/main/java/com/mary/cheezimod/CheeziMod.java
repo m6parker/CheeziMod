@@ -70,6 +70,7 @@ public class CheeziMod {
             EntityRenderers.register(ModEntityTypes.STRAWBERRY_COW.get(), StrawberryCowRenderer::new);
             EntityRenderers.register(ModEntityTypes.DAIRY_COW.get(), DairyCowRenderer::new);
             EntityRenderers.register(ModEntityTypes.MOSSY_COW.get(), MossyCowRenderer::new);
+            EntityRenderers.register(ModEntityTypes.STRAWBERRY_CHICKEN.get(), StrawberryChickenRenderer::new);
         }
     }
 }
