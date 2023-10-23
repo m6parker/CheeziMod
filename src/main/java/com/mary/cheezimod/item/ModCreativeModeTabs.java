@@ -49,6 +49,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.STRAWBERRY_COW_SPAWN_EGG.get());
                         pOutput.accept(ModItems.DAIRY_COW_SPAWN_EGG.get());
                         pOutput.accept(ModItems.MOSSY_COW_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.STRAWBERRY_CHICKEN_SPAWN_EGG.get());
 
                     })
                     .build());

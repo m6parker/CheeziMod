@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.strawberry_chicken.walk": {
+			"loop": true,
+			"animation_length": 2.04167,
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [40, 0, 0]
+						},
+						"1.4167": {
+							"vector": [-40, 0, 0]
+						},
+						"2.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.7083": {
+							"vector": [-40.18893, 1.37708, -1.60637]
+						},
+						"1.4167": {
+							"vector": [57.41029, 1.08258, -0.37688]
+						},
+						"2.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.strawberry_chicken.idle": {
+			"loop": true,
+			"animation_length": 2.95833,
+			"bones": {
+				"body": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.5": {
+							"vector": [0, 0.6, 0]
+						},
+						"2.9167": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

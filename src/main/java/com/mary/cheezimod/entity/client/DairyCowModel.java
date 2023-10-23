@@ -2,14 +2,8 @@ package com.mary.cheezimod.entity.client;
 
 import com.mary.cheezimod.CheeziMod;
 import com.mary.cheezimod.entity.custom.DairyCowEntity;
-import com.mary.cheezimod.entity.custom.StrawberryCowEntity;
-import net.minecraft.client.model.CowModel;
-import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.animal.Cow;
-import net.minecraft.world.level.Level;
 import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.core.animatable.model.CoreGeoBone;
 import software.bernie.geckolib.core.animation.AnimationState;
