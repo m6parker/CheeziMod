@@ -1,6 +1,6 @@
 # CheeziMod
 minecraft mod :)
-## How to Install for the peabrains
+## How to Install for the peabrains (do not follow nothing is right and links are wrong)
 
 ### Requirements:
 - Java
