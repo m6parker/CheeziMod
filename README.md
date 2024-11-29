@@ -1,7 +1,10 @@
 # CheeziMod
-minecraft mod :)
+a minecraft mod :)
 
 ![Untitled document - Google Docs-1](https://github.com/m6parker/CheeziMod/assets/98114662/fd064e08-877b-4a26-89c9-ac3c2f9bdf2b)
+
+![image](https://github.com/user-attachments/assets/22eaf9dc-244a-4443-80c9-3c81980530c1)
+
 ## How to Install for the peabrains (do not follow nothing is right and links are wrong)
 
 ### Requirements:
